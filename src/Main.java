@@ -2,6 +2,12 @@ public class Main {
 
     public static void main(String[] args) {
 
+        /*
+        Not finished, I'll come back to this when I have time.
+        Otherwise, if any one wants to continue practicing by the time I'm not done with what I'm doing,
+        Please kindly check out Kunal Solve any Pattern with this Trick on YouTube to master patterns.
+         */
+
         /**
          * Write code for various patterns
          * Step 1: no. of lines = no. of rows = no. of times outer loop will run
@@ -17,15 +23,16 @@ public class Main {
          * Step 3: What do you want to print? Type of element e.g. star
          * Try to find the formula relating rows and columns
         */
-//        System.out.println("Pattern 1");
+//        System.out.println("Pattern 1: Square");
 //        pattern1(5);
-//        System.out.println("Pattern 2");
+//        System.out.println("Pattern 2: Right angle");
 //        pattern2(4);
-//        System.out.println("Pattern 3");
+//        System.out.println("Pattern 3: Inverted-Right angle");
 //        pattern3(4); // enter 4 as arg
-//        System.out.println("Pattern 4");
+//        System.out.println("Pattern 4: Printed numbers-Right angle");
 //        pattern4(5);
-
+        System.out.println("Pattern 5: Arrow");
+//        pattern5();
     }
 
     static void pattern1(int n) { // Square
@@ -83,12 +90,16 @@ public class Main {
         }
     }
 
-    static void pattern5(int n) {
-        for (int row = 0; row < 2 * n; row++) {
+
+    static void pattern5(int n) { // Arrow, Right & Inverted-Right angeles together
+
+        for (int row = 0; row < 2 * n; row++) { // n is going to be 4 or 5
             int totalColsInRow = 456;
             for (int cols = 0; cols < totalColsInRow; cols++) {
-                //
+                System.out.print("* ");
             }
+            System.out.println();
         }
     }
+
 }
